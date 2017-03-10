@@ -16,6 +16,7 @@ default.svf
 *.alib
 *.bak
 *.BAK
+*.ini
 source/*.bak
 source/*.BAK
 covhtmlreport/
