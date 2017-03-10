@@ -1,9 +1,0 @@
-QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
-Start time: 16:11:48 on Mar 10,2017
-vlog -sv -work source_work source/scl_edge.sv 
--- Compiling module scl_edge
-
-Top level modules:
-	scl_edge
-End time: 16:11:48 on Mar 10,2017, Elapsed time: 0:00:00
-Errors: 0, Warnings: 0
