@@ -12,24 +12,42 @@ include /home/ecegrid/a/ece337/Course_Prod/course_make_vars
 # File Related Variables
 ##############################################################################
 
+# Fill in the appropriate filenames for the Phase 1 submodule code files (without the 'source/')
+# The contents of these variables must be plain text (no functions or variable references)
+SCL_EDGE_FILE	:= scl_edge.sv
+SDA_SEL_FILE	:= sda_sel.sv
+DECODE_FILE		:= decode.sv
+TX_FIFO_FILE	:= tx_fifo.sv
+
+# Fill in the appropriate filenames for the Phase 1 submodule test benches (without the 'source/')
+# The contents of these variables must either be plain text (no functions or variable references)
+# or references to the Phase 1 submodule code file variables
+TB_SCL_EDGE_FILE	:= tb_$(SCL_EDGE_FILE)
+TB_SDA_SEL_FILE		:= tb_$(SDA_SEL_FILE)
+TB_DECODE_FILE		:= tb_$(DECODE_FILE)
+TB_TX_FIFO_FILE		:= tb_$(TX_FIFO_FILE)
+
+# Fill in the names of any test bench helper code files (code files referenced by your testbenches
+# other than the actual design files)( do not include the 'source/') (filenames must start with 'tb_')
+TB_HELPER_FILES	:= 
+
 # List internal component/block files here (separate the filenames with spaces)
 # (do not include the source folder in the name)
 # NOTE: YOU WILL NEED TO SET THIS VARIABLE'S VALUE WHEN WORKING WITH HEIRARCHICAL DESIGNS
 # AND THE AUTOMATED GRADING SYSTEM
-COMPONENT_FILES	:= 
+# The contents of these variables must either be plain text (no functions or variable references)
+# or references to the Phase 1 submodule code file variables
+COMPONENT_FILES	:= $(SCL_EDGE_FILE) $(SDA_SEL_FILE) $(DECODE_FILE) $(TX_FIFO_FILE)
+COMPONENT_FILES += tx_sr.sv rx_sr.sv controller.sv timer.sv sync_low.sv
+COMPONENT_FILES += flex_counter.sv flex_stp_sr.sv flex_pts_sr.sv
 
 # Specify the name of the top level file (do not include the source folder in the name)
 # NOTE: YOU WILL NEED TO SET THIS VARIABLE'S VALUE WHEN WORKING WITH HEIRARCHICAL DESIGNS
 # AND THE AUTOMATED GRADING SYSTEM
-TOP_LEVEL_FILE	:= 
+TOP_LEVEL_FILE	:= i2c_slave.sv
 
-# Specify the filepath of the test bench you want to use (ie. tb_top_level.sv)
-# (do not include the source folder in the name)
+# Specify the filename of the test bench you want to use (without the 'source/')
 TEST_BENCH	:= tb_$(TOP_LEVEL_FILE)
-
-# Fill in the names of any test bench helper code files (code files referenced by your testbenches
-# other than the actual design files)( do not include the 'source/')
-TB_HELPER_FILES	:= 
 
 # Get the top level design and test_bench module names
 TB_MODULE		:= $(notdir $(basename $(TEST_BENCH)))
@@ -43,7 +61,7 @@ M_WORK_LIB := mapped_work
 
 LIB_CREATE	:= vlib
 COMPILE 		:= vlog -sv
-SIMULATE		:= vsim -Lf $(LABS_IP_LIB) -L $(GATE_LIB) -L $(GOLD_LIB) +no_glitch_msg -coverage -voptargs="+acc"
+SIMULATE		:= vsim -Lf $(LABS_IP_LIB) -L $(GATE_LIB) +no_glitch_msg -coverage -voptargs="+acc"
 DC_SHELL		:= dc_shell-t
 
 ##############################################################################
