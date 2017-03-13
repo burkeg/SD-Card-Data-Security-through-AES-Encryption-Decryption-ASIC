@@ -6,7 +6,7 @@
 // Version:     1.0  Initial Design Entry
 // Description: Inverse Rijndael S-Box 
 
-module controller(
+module i_s_box(
 	input wire [7:0]i_s_box_in,
 	output reg [7:0]i_s_box_out
 );
