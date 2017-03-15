@@ -1,0 +1,38 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work "+no_glitch_msg" -coverage -voptargs="+acc" -i -t ps source_work.tb_gen_key 
+# Start time: 23:29:13 on Mar 14,2017
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.tb_gen_key(fast)
+# Loading work.gen_key(fast)
+# Loading work.gen_sub(fast)
+# Loading work.operationG(fast)
+# Loading work.s_box_flex(fast)
+# Loading work.s_box(fast)
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+run 30 ns
+# ** Info: Correct
+#    Time: 13 ns  Scope: tb_gen_key File: source/tb_gen_key.sv Line: 63
+# ** Info: Correct
+#    Time: 13 ns  Scope: tb_gen_key File: source/tb_gen_key.sv Line: 72
+# ** Info: Correct
+#    Time: 13 ns  Scope: tb_gen_key File: source/tb_gen_key.sv Line: 81
+# ** Info: Correct
+#    Time: 13 ns  Scope: tb_gen_key File: source/tb_gen_key.sv Line: 90
+# ** Info: Correct
+#    Time: 13 ns  Scope: tb_gen_key File: source/tb_gen_key.sv Line: 99
+# ** Info: Correct
+#    Time: 13 ns  Scope: tb_gen_key File: source/tb_gen_key.sv Line: 108
+# ** Info: Correct
+#    Time: 13 ns  Scope: tb_gen_key File: source/tb_gen_key.sv Line: 117
+# ** Info: Correct test 2
+#    Time: 25 ns  Scope: tb_gen_key File: source/tb_gen_key.sv Line: 129

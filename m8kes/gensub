@@ -32,12 +32,12 @@ TB_HELPER_FILES	:=
 #COMPONENT_FILES	:= $(SCL_EDGE_FILE) $(SDA_SEL_FILE) $(DECODE_FILE) $(TX_FIFO_FILE)
 #COMPONENT_FILES += tx_sr.sv rx_sr.sv controller.sv timer.sv sync_low.sv
 #COMPONENT_FILES += flex_counter.sv flex_stp_sr.sv flex_pts_sr.sv
-COMPONENT_FILES += s_box.sv s_box_flex.sv operationG.sv gen_sub.sv
+COMPONENT_FILES += s_box.sv s_box_flex.sv operationG.sv
 
 # Specify the name of the top level file (do not include the source folder in the name)
 # NOTE: YOU WILL NEED TO SET THIS VARIABLE'S VALUE WHEN WORKING WITH HEIRARCHICAL DESIGNS
 # AND THE AUTOMATED GRADING SYSTEM
-TOP_LEVEL_FILE	:= gen_key.sv
+TOP_LEVEL_FILE	:= gen_sub.sv
 
 # Specify the filename of the test bench you want to use (without the 'source/')
 TEST_BENCH	:= tb_$(TOP_LEVEL_FILE)
