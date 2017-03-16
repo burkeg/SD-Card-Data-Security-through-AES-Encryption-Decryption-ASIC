@@ -18,6 +18,7 @@ module tb_gen_key();
 	
 	
 	// Test bench dut port signals
+	reg tb_clk;
 	reg [127:0]tb_data_in;
 	reg [127:0]tb_data_out[10:0];
 
@@ -28,7 +29,7 @@ module tb_gen_key();
 
 	
 	// Clock gen block
-/*
+
 	always
 	begin : CLK_GEN
 		tb_clk = 1'b0;
@@ -36,7 +37,7 @@ module tb_gen_key();
 		tb_clk = 1'b1;
 		#(CLK_PERIOD / 2.0);
 	end
-*/
+
 	// DUT portmap
 	gen_key DUT(.data_in(tb_data_in),.data_out(tb_data_out));
 	
@@ -57,8 +58,9 @@ module tb_gen_key();
 		// Wait for some time before starting test cases
 		#(1ns);
 		tb_data_in=128'hAFAdb59705579cce9fd3644f45e3008b;
-		#(12ns);
+		#(25ns);
 		if(tb_data_out[10] == 128'hAFAdb59705579cce9fd3644f45e3008b)
+		#(1ns)
 		begin
 			$info("Correct");
 		end
@@ -123,8 +125,10 @@ module tb_gen_key();
 
 		//test 2
 		tb_data_in=128'h61cd359550d93d14487441a0ad6624c8;
-		#(12ns);
-		if(tb_data_out[0] == 128'he157ed12fbc2426508afe3c9e7bca148)
+		#(25ns);
+		if(tb_data_out[10] == 128'he157ed12fbc2426508afe3c9e7bca148)
+		//if(tb_data_out[0] == 128'h61cd359550d93d14487441a0ad6624c8)
+		#(1ns)
 		begin
 			$info("Correct test 2");
 		end

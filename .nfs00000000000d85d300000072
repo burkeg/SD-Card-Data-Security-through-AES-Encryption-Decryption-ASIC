@@ -1,0 +1,28 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_gen_key.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 17:36:12 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_gen_key.sv 
+# -- Compiling module tb_gen_key
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_gen_key.sv(34): (vlog-2730) Undefined variable: 'tb_clk'.
+# End time: 17:36:13 on Mar 16,2017, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_gen_key.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 17:36:28 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_gen_key.sv 
+# -- Compiling module tb_gen_key
+# 
+# Top level modules:
+# 	tb_gen_key
+# End time: 17:36:28 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

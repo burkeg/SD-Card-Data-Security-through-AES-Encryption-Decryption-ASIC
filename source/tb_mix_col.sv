@@ -20,6 +20,7 @@ module tb_mix_col();
 	// Test bench dut port signals
 	reg [127:0]tb_data_in;
 	reg [127:0]tb_data_out;
+	reg [3:0]tb_count_out;
 
 	
 	// Test bench verification signals
@@ -38,7 +39,7 @@ module tb_mix_col();
 	end
 */
 	// DUT portmap
-	mix_col DUT(.data_in(tb_data_in),.data_out(tb_data_out));
+	mix_col DUT(.data_in(tb_data_in),.count_out('0),.data_out(tb_data_out));
 	
 	
 	
@@ -52,12 +53,13 @@ module tb_mix_col();
 	begin
 		// Initial values
 		tb_data_in='0;
+		tb_count_out='0;
 		
 		
 		// Wait for some time before starting test cases
 		#(1ns);
 		tb_data_in=128'ha2b87eb552b63484ac44cbefeb507f31;
-		#(12ns);
+		#(1ns);
 		if(tb_data_out == 128'h47fe224ad5fd1b67ab8d4fa573fb166b)
 		begin
 			$info("Correct");
