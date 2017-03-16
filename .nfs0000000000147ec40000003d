@@ -1,0 +1,196 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 16:48:32 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv 
+# -- Compiling module shift_rows
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(14): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(14): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(14): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(14): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(15): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(15): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(15): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(15): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(16): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(16): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(16): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(16): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(17): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(17): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(17): near ")": syntax error, unexpected ')'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv(17): near ")": syntax error, unexpected ')'
+# End time: 16:48:32 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 16, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 16:49:34 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/shift_rows.sv 
+# -- Compiling module shift_rows
+# 
+# Top level modules:
+# 	shift_rows
+# End time: 16:49:34 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 17:27:38 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv 
+# -- Compiling module mix_col_sub
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(14): near "reg": syntax error, unexpected reg, expecting ';' or ','
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(17): (vlog-2730) Undefined variable: 'i'.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(17): 'i' is an invalid type in Generate loop. Must be a genvar.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(19): (vlog-2730) Undefined variable: 'out3'.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(19): 'multi2' already declared in this scope.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(20): near "[": syntax error, unexpected '[', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(27): near "EOF": syntax error, unexpected end of source code
+# End time: 17:27:38 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 17:28:50 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv 
+# -- Compiling module mix_col_sub
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(14): near "reg": syntax error, unexpected reg, expecting ';' or ','
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(17): (vlog-2730) Undefined variable: 'i'.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(17): 'i' is an invalid type in Generate loop. Must be a genvar.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(19): (vlog-2730) Undefined variable: 'out3'.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(19): 'multi2' already declared in this scope.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(20): near "[": syntax error, unexpected '[', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(27): near "EOF": syntax error, unexpected end of source code
+# End time: 17:28:50 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 17:28:54 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv 
+# -- Compiling module mix_col_sub
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(21): 'multi2' already declared in this scope.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(22): near "[": syntax error, unexpected '[', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(29): near "EOF": syntax error, unexpected end of source code
+# End time: 17:28:54 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 17:29:34 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv 
+# -- Compiling module mix_col_sub
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(22): near "[": syntax error, unexpected '[', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(29): near "EOF": syntax error, unexpected end of source code
+# End time: 17:29:34 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 17:29:52 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv 
+# -- Compiling module mix_col_sub
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(22): near "[": syntax error, unexpected '[', expecting IDENTIFIER or TYPE_IDENTIFIER
+# End time: 17:29:52 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 17:30:52 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv 
+# -- Compiling module mix_col_sub
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv(22): near "[": syntax error, unexpected '[', expecting IDENTIFIER or TYPE_IDENTIFIER
+# End time: 17:30:52 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 17:32:38 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv 
+# -- Compiling module mix_col_sub
+# 
+# Top level modules:
+# 	mix_col_sub
+# End time: 17:32:38 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 17:32:54 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv 
+# -- Compiling module mix_col_sub
+# 
+# Top level modules:
+# 	mix_col_sub
+# End time: 17:32:55 on Mar 15,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 17:33:04 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv 
+# -- Compiling module mix_col_sub
+# 
+# Top level modules:
+# 	mix_col_sub
+# End time: 17:33:04 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 17:33:05 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv 
+# -- Compiling module mix_col_sub
+# 
+# Top level modules:
+# 	mix_col_sub
+# End time: 17:33:05 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 17:33:05 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/mix_col.sv 
+# -- Compiling module mix_col_sub
+# 
+# Top level modules:
+# 	mix_col_sub
+# End time: 17:33:05 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_mix_col.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:08:14 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_mix_col.sv 
+# -- Compiling module tb_mix_col
+# 
+# Top level modules:
+# 	tb_mix_col
+# End time: 18:08:15 on Mar 15,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/add_round_key.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 19:23:07 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/add_round_key.sv 
+# -- Compiling module add_round_key
+# 
+# Top level modules:
+# 	add_round_key
+# End time: 19:23:07 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_add_round_key.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:26:07 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_add_round_key.sv 
+# -- Compiling module tb_add_round_key
+# 
+# Top level modules:
+# 	tb_add_round_key
+# End time: 20:26:07 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_add_round_key.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:29:38 on Mar 15,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_add_round_key.sv 
+# -- Compiling module tb_add_round_key
+# 
+# Top level modules:
+# 	tb_add_round_key
+# End time: 20:29:38 on Mar 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

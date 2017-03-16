@@ -1,5 +1,5 @@
 // $Id: $
-// File name:   tb_shift_rows.sv
+// File name:   tb_mix_col.sv
 // Created:     3/12/2017
 // Author:      Gabriel Burke
 // Lab Section: 337-02
@@ -7,7 +7,7 @@
 // Description: Test bench for shift rows
 `timescale 1ns/10ps
 
-module tb_shift_rows();
+module tb_mix_col();
 
 	// Define local constants
 	localparam NUM_VAL_BITS	= 16;
@@ -18,8 +18,8 @@ module tb_shift_rows();
 	
 	
 	// Test bench dut port signals
-	reg [127:0]tb_in;
-	reg [127:0]tb_out;
+	reg [127:0]tb_data_in;
+	reg [127:0]tb_data_out;
 
 	
 	// Test bench verification signals
@@ -38,7 +38,7 @@ module tb_shift_rows();
 	end
 */
 	// DUT portmap
-	shift_rows DUT(.in(tb_in),.out(tb_out));
+	mix_col DUT(.data_in(tb_data_in),.data_out(tb_data_out));
 	
 	
 	
@@ -51,14 +51,14 @@ module tb_shift_rows();
 	initial
 	begin
 		// Initial values
-		tb_in='0;
+		tb_data_in='0;
 		
 		
 		// Wait for some time before starting test cases
 		#(1ns);
-		tb_in=128'h00112233445566778899aabbccddeeff;
+		tb_data_in=128'ha2b87eb552b63484ac44cbefeb507f31;
 		#(12ns);
-		if(tb_out == 128'h0055aaff4499ee3388dd2277cc1166bb)
+		if(tb_data_out == 128'h47fe224ad5fd1b67ab8d4fa573fb166b)
 		begin
 			$info("Correct");
 		end
