@@ -9,13 +9,14 @@ module controller(
 	input wire clk,
 	input wire n_rst,
 	input wire enable_encrypt,
-	output wire clear,
-	output wire count_enable,
-	output wire reloop,
-	output wire enc_busy
+	input wire [3:0]count_out,
+	output reg clear,
+	output reg count_enable,
+	output reg reloop,
+	output reg enc_busy
 
 );
-typedef enum bit [3:0] {IDLE,SEND,WACKNACK,NACK,PACK,LOAD,TRAN,TRANW,READ,WACK} stateType;
+typedef enum bit [3:0] {IDLE,WAIT0,WAIT1,ACTIVE0,ACTIVE1,LAST} stateType;
 stateType state,nextstate;
 
 	
@@ -30,79 +31,45 @@ end
 
 always_comb begin : Next_state
 	nextstate=state;
-	read_enable=0;
-	load_data=0;
-	sda_mode=0;
-	tx_enable=0;
-	rx_enable=0;
+	clear=0;
+	count_enable=0;
+	reloop=1;
+	enc_busy=1;
 	
 	case(state)
 
 	IDLE: begin
-	if (start_found==1)
-		nextstate=SEND;
+	if (enable_encrypt==1)
+		nextstate=WAIT0;
+	enc_busy=0;
 	end
 
-	SEND: begin
-	if (byte_received==1)
-		nextstate=WACKNACK;
-	sda_mode=2'b00;
-	rx_enable=1'b1;
-	
+	WAIT0: begin
+	nextstate=WAIT1;
+	clear=1;
 	end
 
-	WACKNACK: begin
-	if (address_match==1 && ack_prep==1 && rw_mode==1)
-		nextstate=PACK;
-	else if (ack_prep==1 && (rw_mode==0 | address_match==0))
-		nextstate=NACK;
-	
+	WAIT1: begin
+	nextstate=ACTIVE0;
 	end
 
-	NACK: begin
-	if (ack_done==1)
-		nextstate=IDLE;
-	sda_mode=2'b10;
+	ACTIVE0: begin
+	nextstate=ACTIVE1;
+	reloop=0;
+	count_enable=1;
 	end
 
-	PACK: begin
-	if (ack_done==1)
-		nextstate=LOAD;
-	sda_mode=2'b01;
+	ACTIVE1: begin
+	if (count_out==4'd9)
+		nextstate=LAST;
+	else
+		nextstate=ACTIVE0;
 	end
 
-	LOAD: begin
-	nextstate=TRAN;
-	sda_mode=2'b11;
-	load_data=1;
-
+	LAST: begin
+	nextstate=IDLE;
+	reloop=0;
 	end
-
-	TRAN: begin
-	if (ack_prep==1)
-		nextstate=TRANW;
-	sda_mode=2'b11;
-	tx_enable=1;
-	end
-
-	TRANW: begin
-	if (check_ack==1)
-		nextstate=READ;
-	end
-
-	READ: begin
-	if (sda_in==0)
-		nextstate=WACK;
-	else 
-		nextstate=IDLE;
-	read_enable=1;
-	end
-
-	WACK: begin
-	if (ack_done==1)
-		nextstate=LOAD;
-	end
-
 	
 	default:
 		nextstate=IDLE;

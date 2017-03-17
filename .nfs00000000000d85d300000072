@@ -26,3 +26,160 @@ vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Sec
 # 	tb_gen_key
 # End time: 17:36:28 on Mar 16,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:17:56 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv 
+# -- Compiling module controller
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv(107): near "reloop": syntax error, unexpected IDENTIFIER, expecting ';'
+# End time: 18:17:56 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:18:04 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv 
+# -- Compiling module controller
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv(34): (vlog-2110) Illegal reference to net "clear".
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv(35): (vlog-2110) Illegal reference to net "count_enable".
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv(36): (vlog-2110) Illegal reference to net "reloop".
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv(37): (vlog-2110) Illegal reference to net "enc_busy".
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv(44): (vlog-2110) Illegal reference to net "enc_busy".
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv(49): (vlog-2110) Illegal reference to net "clear".
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv(74): (vlog-2110) Illegal reference to net "reloop".
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv(75): (vlog-2110) Illegal reference to net "count_enable".
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv(107): (vlog-2110) Illegal reference to net "reloop".
+# End time: 18:18:04 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:19:07 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 18:19:07 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/EncryptionBlock.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:26:19 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/EncryptionBlock.sv 
+# -- Compiling module EncryptionBlock
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/EncryptionBlock.sv(15): near "output": syntax error, unexpected output, expecting ')'
+# End time: 18:26:19 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/EncryptionBlock.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:26:27 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/EncryptionBlock.sv 
+# -- Compiling module EncryptionBlock
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/EncryptionBlock.sv(28): (vlog-2730) Undefined variable: 'n_rst'.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/EncryptionBlock.sv(38): (vlog-2730) Undefined variable: 'reloop'.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/EncryptionBlock.sv(50): near ".": syntax error, unexpected '.', expecting ')'
+# End time: 18:26:27 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/EncryptionBlock.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:27:08 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/EncryptionBlock.sv 
+# -- Compiling module EncryptionBlock
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/EncryptionBlock.sv(52): near ".": syntax error, unexpected '.', expecting ')'
+# End time: 18:27:09 on Mar 16,2017, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/EncryptionBlock.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:27:16 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/EncryptionBlock.sv 
+# -- Compiling module EncryptionBlock
+# 
+# Top level modules:
+# 	EncryptionBlock
+# End time: 18:27:16 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_gen_key.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:28:25 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_gen_key.sv 
+# -- Compiling module tb_gen_key
+# 
+# Top level modules:
+# 	tb_gen_key
+# End time: 18:28:25 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_add_round_key.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:35:30 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_add_round_key.sv 
+# -- Compiling module tb_add_round_key
+# 
+# Top level modules:
+# 	tb_add_round_key
+# End time: 18:35:30 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:35:31 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv 
+# -- Compiling module tb_EncryptionBlock
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv(73): Expecting numeric digits.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv(73): near "#": syntax error, unexpected '#', expecting ';'
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv(86): Expecting numeric digits.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv(86): near "#": syntax error, unexpected '#', expecting ';'
+# End time: 18:35:31 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:37:25 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv 
+# -- Compiling module tb_EncryptionBlock
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv(86): Expecting numeric digits.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv(86): near "#": syntax error, unexpected '#', expecting ';'
+# End time: 18:37:25 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:37:49 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv 
+# -- Compiling module tb_EncryptionBlock
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv(86): Expecting numeric digits.
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv(86): near "#": syntax error, unexpected '#', expecting ';'
+# End time: 18:37:49 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:39:51 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv 
+# -- Compiling module tb_EncryptionBlock
+# 
+# Top level modules:
+# 	tb_EncryptionBlock
+# End time: 18:39:51 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:39:53 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv 
+# -- Compiling module tb_EncryptionBlock
+# 
+# Top level modules:
+# 	tb_EncryptionBlock
+# End time: 18:39:53 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:40:16 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/tb_EncryptionBlock.sv 
+# -- Compiling module tb_EncryptionBlock
+# 
+# Top level modules:
+# 	tb_EncryptionBlock
+# End time: 18:40:16 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/byte_sub.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:41:23 on Mar 16,2017
+# vlog -reportprogress 300 -work work /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/byte_sub.sv 
+# -- Compiling module byte_sub
+# ** Error: /home/ecegrid/a/mg58/ece337/SD-Card-Data-Security-through-AES-Encryption-Decryption-ASIC/source/byte_sub.sv(22): (vlog-2730) Undefined variable: 'count_data'.
+# End time: 18:41:23 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

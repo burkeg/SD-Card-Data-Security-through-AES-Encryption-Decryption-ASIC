@@ -19,7 +19,7 @@ reg [127:0] in;
 
 always_comb
 begin
-	if (count_data == 4'd0)
+	if (count_out == 4'd0)
 		in=data_in^key;
 	else
 		in=data_to_store;

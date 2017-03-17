@@ -8,13 +8,15 @@
 module EncryptionBlock
 (	
 	input wire clk,
+	input wire n_rst,
 	input wire enable_encrypt,
 	input reg [127:0]key_in,
 	input reg [127:0] data_in,
-	output reg [127:0]final_data_out 
+	output reg [127:0]final_data_out,
 	output reg enc_busy
 );
 reg count_enable;
+reg reloop;
 reg [3:0]count_out;
 reg [127:0]byte_out;
 reg [127:0]rows_out;
@@ -30,7 +32,7 @@ begin
 	if(n_rst == 1'b0)
 		final_data_out<='0;
 	else
-		final_data_out=next_final_data_out;
+		final_data_out<=next_final_data_out;
 end
 
 always_comb
@@ -46,6 +48,7 @@ end
 		.reloop(reloop),
 		.enable_encrypt(enable_encrypt),
 		.clear(clear),
+		.count_out(count_out),
 		.count_enable(count_enable),
 		.enc_busy(enc_busy)
 	);
@@ -56,6 +59,11 @@ end
 		.data_to_store(final_data_out),
 		.key(key_in),
 		.data_out(byte_out)
+	);
+
+	shift_rows srows(
+		.in(byte_out),
+		.out(rows_out)
 	);
 
 	mix_col mcol (
