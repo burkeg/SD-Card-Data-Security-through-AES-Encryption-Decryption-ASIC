@@ -1,22 +1,23 @@
 // $Id: $
-// File name:   controller.sv
-// Created:     2/22/2017
-// Author:      Gabriel Burke
+// File name:   inv_controller.sv
+// Created:     4/4/2017
+// Author:      Caleb Withers
 // Lab Section: 337-02
 // Version:     1.0  Initial Design Entry
-// Description: Controller Block
-module controller(
+// Description: Decryption Block Controller
+module inv_controller(
 	input wire clk,
 	input wire n_rst,
-	input wire enable_encrypt,
+	input wire mode,
+	input wire enable_decrypt,
 	input wire [3:0]count_out,
 	output reg clear,
 	output reg count_enable,
 	output reg reloop,
-	output reg enc_busy
+	output reg dec_busy
 
 );
-typedef enum bit [2:0] {IDLE,WAIT0,WAIT1,ACTIVE0,ACTIVE1,LAST} stateType;
+typedef enum bit [3:0] {IDLE,WAIT0,WAIT1,ACTIVE0,ACTIVE1,LAST} stateType;
 stateType state,nextstate;
 
 	
@@ -34,14 +35,14 @@ always_comb begin : Next_state
 	clear=0;
 	count_enable=0;
 	reloop=1;
-	enc_busy=1;
+	dec_busy=1;
 	
 	case(state)
 
 	IDLE: begin
-	if (enable_encrypt==1)
+	if (enable_decrypt==1)
 		nextstate=WAIT0;
-	enc_busy=0;
+	dec_busy=0;
 	end
 
 	WAIT0: begin
@@ -74,7 +75,6 @@ always_comb begin : Next_state
 	default:
 		nextstate=IDLE;
 	
-endcase
+	endcase
 end
-
 endmodule

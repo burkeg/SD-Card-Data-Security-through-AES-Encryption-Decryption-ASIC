@@ -8,7 +8,9 @@
 module keyscheduler
 (
 	input reg [127:0]key_in,
-	input reg [3:0] count_out,
+	input reg mode,
+	input reg [3:0] enc_count_out,
+	input reg [3:0] dec_count_out,
 	output reg [127:0]curr_key 
 );
 reg [127:0] ext_key[10:0];
@@ -17,7 +19,10 @@ reg [127:0] ext_key[10:0];
 
 always_comb
 begin
-	curr_key=ext_key[9-count_out];
+	if(mode)
+		curr_key=ext_key[9-enc_count_out];
+	else
+		curr_key=ext_key[dec_count_out];
 end
 
 

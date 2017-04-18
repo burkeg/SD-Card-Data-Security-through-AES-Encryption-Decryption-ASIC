@@ -1,31 +1,31 @@
 // $Id: $
-// File name:   EncryptionBlock.sv
-// Created:     3/12/2017
-// Author:      Gabriel Burke
+// File name:   DecryptionBlock.sv
+// Created:     4/4/2017
+// Author:      Caleb Withers
 // Lab Section: 337-02
 // Version:     1.0  Initial Design Entry
-// Description: Byte Substitution block
+// Description: Decryption Block
 
-module EncryptionBlock
+module DecryptionBlock
 (	
 	input wire clk,
 	input wire n_rst,
-	input wire enable_encrypt,
+	input wire enable_decrypt,
 	input reg [127:0] key_in,
 	input reg [127:0] data_in,
 	input reg [127:0]curr_key,
 	output reg [127:0] final_data_out,
-	output reg [3:0] enc_count_out,
-	output reg enc_busy
+	output reg [3:0] dec_count_out,
+	output reg dec_busy
 );
 reg count_enable;
 reg reloop;
 
+reg [127:0]byte_in;
 reg [127:0]byte_out;
-reg [127:0]rows_out;
-reg [127:0]cols_out;
+reg [127:0]rows_in;
+reg [127:0]cols_in;
 reg [127:0]rkey_out;
-
 
 reg [127:0]next_final_data_out;
 
@@ -43,57 +43,54 @@ begin
 	if (reloop)
 		next_final_data_out=final_data_out;
 	else
-		next_final_data_out=rkey_out;
+		next_final_data_out=byte_out;
 end
-	controller ctrlr (
+	inv_controller ctrlr (
 		.clk(clk),
 		.n_rst(n_rst),
 		.reloop(reloop),
-		.enable_encrypt(enable_encrypt),
+		.enable_decrypt(enable_decrypt),
 		.clear(clear),
-		.count_out(enc_count_out),
+		.count_out(dec_count_out),
 		.count_enable(count_enable),
-		.enc_busy(enc_busy)
+		.dec_busy(dec_busy)
 	);
 
-	byte_sub bsub(
-		.data_in(data_in),
-		.count_out(enc_count_out),
-		.data_to_store(final_data_out),
+	inv_byte_sub inv_bsub(
+		.data_in(byte_in),
+		.count_out(dec_count_out),
 		.key(key_in),
 		.data_out(byte_out)
 	);
 
-	shift_rows srows(
-		.in(byte_out),
-		.out(rows_out)
+	inv_shift_rows srows(
+		.in(rows_in),
+		.out(byte_in)
 	);
 
-	mix_col mcol (
-		.data_in(rows_out),
-		.count_out(enc_count_out),
-		.data_out(cols_out)
+	inv_mix_col mcol (
+		.data_in(cols_in),
+		.count_out(dec_count_out),
+		.data_out(rows_in)
 	);
 
-	add_round_key ark (
-		.data_in(cols_out),
+	inv_add_round_key ark (
+		.data_in(data_in),
+		.data_store(final_data_out),
+		.count_in(dec_count_out),
 		.key(curr_key),
-		.data_out(rkey_out)
+		.data_out(cols_in)
 	);
 
-
-	
 	flex_counter cnter (
 		.clk(clk),
 		.n_rst(n_rst),
 		.clear(clear),
 		.count_enable(count_enable),
-		.count_out(enc_count_out),
+		.count_out(dec_count_out),
 		.rollover_val(4'd10),
 		.rollover_flag()
 	);
-
-
 
 
 

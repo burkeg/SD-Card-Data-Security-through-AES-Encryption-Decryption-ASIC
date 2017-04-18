@@ -1,13 +1,13 @@
 // $Id: $
-// File name:   tb_EncryptionBlock.sv
-// Created:     3/14/2017
-// Author:      Gabriel Burke
+// File name:   tb_DecryptionBlock.sv
+// Created:     4/11/2017
+// Author:      Caleb Withers
 // Lab Section: 337-02
 // Version:     1.0  Initial Design Entry
-// Description: Test bench for parallel s-boxes
+// Description: Decryption test bench
 `timescale 1ns/10ps
 
-module tb_EncryptionBlock();
+module tb_DecryptionBlock();
 
 	// Define local constants
 	localparam NUM_VAL_BITS	= 16;
@@ -20,11 +20,11 @@ module tb_EncryptionBlock();
 	// Test bench dut port signals
 	reg tb_clk;
 	reg tb_n_rst;
-	reg tb_enable_encrypt;
+	reg tb_enable_decrypt;
 	reg [127:0]tb_data_in;
 	reg [127:0]tb_key_in;
 	reg [127:0]tb_final_data_out;
-	reg tb_enc_busy;
+	reg tb_dec_busy;
 
 	
 	// Test bench verification signals
@@ -43,14 +43,14 @@ module tb_EncryptionBlock();
 	end
 
 	// DUT portmap
-	EncryptionBlock DUT(
+	DecryptionBlock DUT(
 		.clk(tb_clk),
 		.n_rst(tb_n_rst),
-		.enable_encrypt(tb_enable_encrypt),
+		.enable_decrypt(tb_enable_decrypt),
 		.data_in(tb_data_in),
 		.key_in(tb_key_in),
 		.final_data_out(tb_final_data_out),
-		.enc_busy(tb_enc_busy)
+		.dec_busy(tb_dec_busy)
 	);
 	
 	
@@ -68,20 +68,20 @@ module tb_EncryptionBlock();
 		tb_n_rst=1;
 		#(10ns)
 		tb_n_rst=0;
-		tb_enable_encrypt=0;
+		tb_enable_decrypt=0;
 		#(10ns)
 		tb_n_rst=1;
 		#(10ns)		
 		
 		// Wait for some time before starting test cases
-		tb_data_in=128'h7d8ae0f7cfa0a6cb09fb5d05a8ec586d;
+		tb_data_in = 128;hdeb0f81341f3503a7cd01e2bc7cdd556;
 		tb_key_in =128'h5e74e7ba66b0c7cc1b7697b3f9f51527;
 		#(10ns)
-		tb_enable_encrypt=1;
+		tb_enable_decrypt=1;
 		#(10ns)
-		tb_enable_encrypt=0;
+		tb_enable_decrypt=0;
 		#(750ns);
-		if(tb_final_data_out == 128'hdeb0f81341f3503a7cd01e2bc7cdd556)
+		if(tb_final_data_out == 128'h7d8ae0f7cfa0a6cb09fb5d05a8ec586d)
 		begin
 			$info("Correct");
 		end
