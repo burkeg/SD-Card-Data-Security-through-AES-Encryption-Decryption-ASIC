@@ -12,35 +12,24 @@ include /home/ecegrid/a/ece337/Course_Prod/course_make_vars
 # File Related Variables
 ##############################################################################
 
-# Fill in the appropriate filenames for the Phase 1 submodule code files (without the 'source/')
-# The contents of these variables must be plain text (no functions or variable references)
-
-# Fill in the appropriate filenames for the Phase 1 submodule test benches (without the 'source/')
-# The contents of these variables must either be plain text (no functions or variable references)
-# or references to the Phase 1 submodule code file variables
-
-# Fill in the names of any test bench helper code files (code files referenced by your testbenches
-# other than the actual design files)( do not include the 'source/') (filenames must start with 'tb_')
-TB_HELPER_FILES	:= 
-
 # List internal component/block files here (separate the filenames with spaces)
 # (do not include the source folder in the name)
 # NOTE: YOU WILL NEED TO SET THIS VARIABLE'S VALUE WHEN WORKING WITH HEIRARCHICAL DESIGNS
 # AND THE AUTOMATED GRADING SYSTEM
-# The contents of these variables must either be plain text (no functions or variable references)
-# or references to the Phase 1 submodule code file variables
-COMPONENT_FILES += shift_rows.sv
-COMPONENT_FILES += keyscheduler.sv mix_col_sub.sv mix_col.sv mul2.sv mul3.sv
-COMPONENT_FILES += add_round_key.sv byte_sub.sv controller.sv flex_counter.sv 
-COMPONENT_FILES += s_box.sv s_box_flex.sv operationG.sv gen_sub.sv gen_key.sv
+COMPONENT_FILES	:= sync_miso.sv miso_edge_detect.sv sd_clk_edge.sv controller.sv sd_clk_gen.sv flex_stp_sr.sv flex_pts_sr.sv data_out_pts_sr.sv data_in_stp_sr.sv command_pts_sr.sv response_stp_sr.sv rx_data_buff.sv tx_data_buff.sv tx_rx_block.sv spi_init_fsm.sv block_len_fsm.sv read_sd_card_fsm.sv write_sd_card_fsm.sv
 
 # Specify the name of the top level file (do not include the source folder in the name)
 # NOTE: YOU WILL NEED TO SET THIS VARIABLE'S VALUE WHEN WORKING WITH HEIRARCHICAL DESIGNS
 # AND THE AUTOMATED GRADING SYSTEM
-TOP_LEVEL_FILE	:= EncryptionBlock.sv
+TOP_LEVEL_FILE	:= sd_interface_main.sv
 
-# Specify the filename of the test bench you want to use (without the 'source/')
+# Specify the filepath of the test bench you want to use (ie. tb_top_level.sv)
+# (do not include the source folder in the name)
 TEST_BENCH	:= tb_$(TOP_LEVEL_FILE)
+
+# Fill in the names of any test bench helper code files (code files referenced by your testbenches
+# other than the actual design files)( do not include the 'source/')
+TB_HELPER_FILES	:= 
 
 # Get the top level design and test_bench module names
 TB_MODULE		:= $(notdir $(basename $(TEST_BENCH)))
@@ -54,7 +43,7 @@ M_WORK_LIB := mapped_work
 
 LIB_CREATE	:= vlib
 COMPILE 		:= vlog -sv
-SIMULATE		:= vsim -Lf $(LABS_IP_LIB) -L $(GATE_LIB) +no_glitch_msg -coverage -voptargs="+acc"
+SIMULATE		:= vsim -Lf $(LABS_IP_LIB) -L $(GATE_LIB) -L $(GOLD_LIB) +no_glitch_msg -coverage -voptargs="+acc"
 DC_SHELL		:= dc_shell-t
 
 ##############################################################################
@@ -279,8 +268,8 @@ tbsim_%_mapped: $(M_WORK_LIB)/% $(M_WORK_LIB)/tb_%
 
 # Set the default value of the clock name and clock period to an empty string so that clock timing will
 # only be activated in the SYN_CMDS definition if they were overwritten at invocation
-CLOCK_NAME 		:=
-CLOCK_PERIOD	:=
+CLOCK_NAME 		:= clk
+CLOCK_PERIOD	:= 1.5
 
 # Set the default value of the source files for sub modules to be an empty string so that
 # it will only be used if overwritten at invocation
